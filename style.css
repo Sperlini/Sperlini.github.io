@@ -1,0 +1,602 @@
+*{
+    box-sizing: content-box;
+}
+
+
+#grid-container{
+    display: grid;
+    grid-template-areas: "nav" 
+                        "top-header"
+                         "header" 
+                         "main" 
+                         "footer";
+    grid-template-columns: 1fr;
+    
+}
+
+
+body{
+    font-family: 'Noto Sans Mono', monospace;
+}
+ /* https://fonts.google.com/noto/specimen/Noto+Sans+Mono font jeg brukte. Det er free use på denne fonten */  
+   
+    
+
+
+#top-header{
+    display: grid;
+    grid-area: top-header;
+    background-image: url(./bildebank/souvik-banerjee--WPrNEM_6dg-unsplash.jpg);
+    /*background-size: 100% 100%; */
+    /*https://stackoverflow.com/questions/19127225/make-the-header-image-fit-the-container-nothing-seems-to-work  Hvor jeg fikk en ide å kunne bruke  background-size:100% 100% kanskje*/
+    background-size:cover;
+    padding: 2rem;
+    height: 200px;
+}
+
+#top-header h1{
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: bisque;
+  text-align: center;
+}
+/*/https://www.w3schools.com/HOWTO/howto_css_image_text.asp Husket ikke hvordan jeg centret text inni bilde*/
+
+
+/* nav ul li a::before{
+ 
+    content: "  ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+/*transition: top 0.5s ease;
+
+
+}
+
+ nav ul li a:hover::before{
+
+    /*top: 17px;
+    transform: scaleX(100%);
+
+}
+
+@keyframes flyinglogo{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+nav img {
+    transform: translateX(-1000px);
+    animation-name: flyinglogo;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+} */
+
+nav ul {
+    
+    gap: 1rem ;
+    display:flex;
+    list-style: none;
+    float: none;
+    flex-grow: 2;
+   
+   
+    
+}
+
+.fa-solid.fa-bars{
+    color: black;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+/*@keyframes colorAni{
+    0%{
+        background-color: white;
+    }
+
+    25%{
+        background-color: green;
+    }
+
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: pink;
+    }
+}
+
+
+
+#menybar{
+    animation-name: colorAni;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}*/
+
+
+#table{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: bisque;
+    padding: 10px;
+    column-gap: 10px;
+    
+}
+
+div h3 {
+    font-size: 10px;
+}
+article h3{
+    font-size: 40px;
+ }
+
+#table div{
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    overflow: auto;
+    position: static;
+    
+    /* Hadde glemt hva jeg skulle bruke så boxen fulgte litt mer etter ved resize https://www.w3schools.com/css/css_overflow.asp */ 
+}
+.item1 {
+    grid-column-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+  }
+
+  .item2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    text-align: center;
+  }
+  .item3 {
+    text-align: center;
+  }
+  .item4 {
+    width: fit-content;
+    height: fit-content;
+
+  }
+  .item9 {
+    width: fit-content;
+    height: fit-content;
+
+  }
+  .item13 {
+    width: fit-content;
+    height: fit-content;
+    
+    /* Fant ideen å bruke fit-content for å plassere teksten fint inni grid box https://stackoverflow.com/questions/71831966/auto-fill-and-fit-css-grid*/
+  }
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    height: 1rem;
+    font-weight: bold;
+    list-style: none;
+    flex-grow: 2;
+    
+    
+    
+}
+
+nav{
+    overflow: auto;
+    display: flex;
+    background-color: bisque;
+    border:5px solid black;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+       
+    
+
+}
+
+
+nav a{
+    text-decoration: none;
+    position: relative;
+    
+    
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3%;
+    
+}
+main section h1{
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    
+    
+}
+main section h1 p{
+    text-align: center;
+    
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+main section h2{
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+
+}
+main section h3{
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+section p{
+    
+    text-align: center;
+    /*border: 1px solid black; */ 
+}
+
+section li{
+    margin-bottom: 10px;
+}
+
+#infoarticle{
+display: grid;
+align-items: center;
+justify-content: center;
+gap: 0.2%;
+font-size: 15px;
+padding: 0.1rem;
+}
+
+#article p{
+    text-align:left;
+    
+}
+
+#article2 p{
+    text-align:left;
+    
+}
+
+#article3 p{
+    text-align:left;
+    
+}
+
+#article4 p{
+    text-align:left;
+    
+}
+
+#ja ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3%;
+    flex-direction: column;
+}
+
+
+
+figure img{
+    align-content: center;
+    height: auto; 
+    width: auto; 
+    max-width: 600px; 
+    max-height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    /* https://www.w3schools.com/howto/howto_css_image_center.asp */ 
+}
+
+/*#picturemid img{
+    
+}*/
+
+
+
+figcaption {
+    
+    color: black;
+    padding: 1px;
+    text-align: center;
+    font-size: calc(4px + 0.5rem);   /*Testa font-size som VG.no bruker*/ 
+    /*https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption*/
+    
+    
+}
+ 
+a{
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  
+}
+
+main article{
+    
+    flex-basis:250px;
+    /*flex-basis:250px; fikk jeg ide å bruke etter gjenomgang med lærer */ 
+    flex-grow: 1;
+    padding: 1rem;
+    flex-wrap: wrap;
+    display: inline-block;
+    /* Fikk jeg ide å bruke display: inline-block;*/ 
+    /*https://stackoverflow.com/questions/1383143/how-to-prevent-line-breaks-in-list-items-using-css*/
+
+ }
+ 
+ article a img{
+    width: 150px;
+    height: 150px;
+    
+
+ }
+ article a img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+ }
+ /*Mulig gjøre endringer her*/ 
+ 
+ article a{
+    text-align: center;
+    align-items: center;
+    display: grid;
+
+ }
+
+ nav img{
+    width: 150px;
+    height: auto;
+ }
+ 
+
+ h4 {
+    font-weight: normal;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.fa-brands.fa-instagram {
+    background-color: transparent;
+    border: none;
+    gap: 10px;
+    color: brown;
+  }
+  .fa-brands.fa-facebook {
+    background-color: transparent;
+    border: none;
+    gap: 10px;
+    color: brown;
+  }
+  .fa-brands.fa-twitter {
+    background-color: transparent;
+    border: none;
+    gap: 10px;
+    color: brown;
+  }
+
+
+footer{
+    grid-area: footer;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    border-top: 2px solid black;
+    
+    /* border-top inspirert av lærer, likte så godt streken under, så måtte låne kode-delen */ 
+}
+footer ul{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 3.9rem;
+    
+}
+footer ul li{
+    list-style: none;
+    
+}
+
+
+/*Contact us*/
+#contact_us{
+    display: grid;
+    gap: 3rem;
+    padding: 1rem
+}
+
+
+#liste_contakt{
+    display: grid;
+    justify-content: center;
+}
+
+dt{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+dd{
+    text-align: center;
+}
+
+#atelefon{
+    
+    right: 20px;
+}
+
+#amail{
+    
+    right: 20px;
+}
+#asms{
+    
+    right: 20px;
+}
+
+#kontakt_send{
+    height:200px;
+    font-weight: bold;
+}
+
+#fnavn{
+    height:40px;
+    font-weight: bold;
+}
+
+#enavn{
+    height:40px;
+    font-weight: bold;
+}
+
+#kontakt_header{
+    text-align: center;
+}
+
+
+
+#map {
+    height: 400px;
+    width: 100%;  
+  }
+
+#kartgoogle{
+    text-align: center;
+    padding: 2rem;
+}
+/*@media screen (min-width:) {
+
+#table div{
+    text-align: left;
+
+div h3 {
+font-size: 9px;
+}
+    
+    
+}*/
+
+@media screen and (min-width: 590px) {
+    #table div{
+        text-align: center;
+        font-size: 20px;
+        
+}
+    
+
+    #table{
+        
+        padding: 30px;
+        column-gap: 30px;
+        
+    }
+    article h3{
+        font-size: 40px;
+     }
+}
+
+
+
+@media screen and (min-width: 850px) {
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        list-style: none;
+        padding: 1rem;
+           
+    }
+    nav h2{
+        font-size: 30px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1100px) {
+    #table div{
+        text-align: center;
+        font-size: 40px;
+        
+}
+    div h3 {
+    font-size: 20px;
+    }
+
+    #table{
+        
+        padding: 40px;
+        column-gap: 40px;
+        
+    }
+    article h3{
+        font-size: 40px;
+     }
+     nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 25px;
+        font-weight: bold;
+        list-style: none;
+        padding: 2rem;    
+    }
+    nav h2{
+        font-size: 40px;
+    }
+
+}
+@media screen and (min-width: 1400px) {
+    div h3 {
+        font-size: 40px;
+    }
+    nav h2{
+        font-size: 50px;
+    }
+    }
+/* Justerte det sånn her i mediaquaries slik at skriften inni boxene i tabellen fikk plass til alt tekst i fleste størrelser*/ 

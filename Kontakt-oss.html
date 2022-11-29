@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+        <link href="font/css/fontawesome.css" rel="stylesheet">
+        <link href="font/css/brands.css" rel="stylesheet">
+        <link href="font/css/solid.css" rel="stylesheet">
+        <link href="font/css/regular.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="module" src="./index.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <title>Kontakt oss</title>
+    </head>
+<body>
+    
+    <div id="grid-container"></div>
+     
+    <nav>
+        <h4><a href="index.html"><img src="bildebank/webstacks-WbOR54pzvLM-unsplash.jpg" alt="placeholder bilde"></a></h4>
+        <h2>Deleksamen Webutvikling</h2>
+        
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="CMS.html">CMS</a></li>
+            <li><a href="Analyse.html">Analyse</a></li>
+            <li><a href="UUvsSEO.html">UU vs SEO</a></li>
+            <li><a href="Kontakt-oss.html">Kontakt oss</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <h1 id="kontakt_header">
+            Kontakt oss
+        </h1>
+    <div id="contact_us">
+        
+
+            <label for="Fornavn">Fornavn:</label>
+            <input type="text" id="fnavn" name="firstname" placeholder="Ditt navn...">
+        
+            <label for="Etternavn">Etternavn:</label>
+            <input type="text" id="enavn" name="lastname" placeholder="Etternavn...">
+        
+          
+        
+            <label for="beskrivelse">Beskrivelse:</label>
+            <textarea id="kontakt_send" name="send" placeholder="Skriv noe..."></textarea>
+        
+            <input type="submit" value="Send" role="button" aria-label=" kontakt oss sende knapp">
+        <!--https://www.w3schools.com/howto/howto_css_contact_form.asp  for å se hvordan listen burde-->
+
+    </div>
+
+    <dl id="liste_contakt">
+        <dt>Kundeservice (09-22 Man-Fre)</dt>
+        <dd>
+            <a id="atelefon" href="tel:69608000"><i class="fa-solid fa-phone"></i>69 60 80 00</a>
+        </dd>
+        <dt>Email</dt>
+        <dd>
+            <a id="amail" href="mailto:skole@hiof.no"><i class="fa-solid fa-envelope"></i>skole@hiof.no</a>
+        </dd>
+        <dt>SMS</dt>
+        <dd>
+            <a id="asms" href="sms:1234"><i class="fa-solid fa-comment-sms"></i>4000</a>
+        </dd>
+        <!--Så på hvordan kotakt siden til vg var, brukte det som inspirasjon https://www.vg.no/informasjon/kontakt-oss-->
+        
+
+
+      </dl>
+      <h3 id="kartgoogle">Lokasjon:</h3>
+    
+    <div id="map"></div>
+
+     <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx6N_lHM1piB-GFxfZcekjdtfqajjuF7A&callback=initMap&v=weekly"
+      defer
+    ></script>
+      <!--kodelinje hentet fra her: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript-->
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://www.hiof.no/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+            <li><a href="https://www.hiof.no/"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+            <li><a href="https://www.hiof.no/"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+        </ul>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
