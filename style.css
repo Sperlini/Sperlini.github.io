@@ -142,7 +142,7 @@ nav ul {
     justify-content: center;
 }
 
-#sharebuttons-kontakt{
+#sharebuttons-right{
     display: flex;
     flex-direction: row;
     justify-content: right;
