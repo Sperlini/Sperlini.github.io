@@ -142,6 +142,12 @@ nav ul {
     justify-content: center;
 }
 
+#sharebuttons-kontakt{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
 
 #table{
     display: grid;
