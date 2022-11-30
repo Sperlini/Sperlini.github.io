@@ -12,9 +12,35 @@
         <link href="font/css/solid.css" rel="stylesheet">
         <link href="font/css/regular.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="module" src="./index.js"></script>
     <title>CMS</title>
+        <meta property="og:locale" content="nb_NO">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="CMS">
+        <meta property="og:url" content="https://sperlini.github.io/CMS.html">
+        <meta property="og:image" content="https://sperlini.github.io/bildebank/webstacks-WbOR54pzvLM-unsplash.webp">
+        <meta property="og:description" content="Hva er CMS og hva er fordelene til de ulike typer CMS?">
+        <!--og metatags er overnfor for facebook, pinterest etc delingsknappene-->
+        <meta name="twitter:title" content="CMS">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@alexasp">
+        <meta name="twitter:description" content="Hva er CMS og hva er fordelene til de ulike typer CMS?">
+        <meta name="twitter:image" content="https://sperlini.github.io/bildebank/webstacks-WbOR54pzvLM-unsplash.webp">
+        <!--twitter metatags ovenfor for twitter delingsknapp-->
 </head>
 <body>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--Script for få facebookdeling knapp til å funke-->
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <!--Script for å deling/lagre knapp for pinterest -->
     
     <div id="grid-container"></div>
      
@@ -34,9 +60,20 @@
             <img src="./bildebank/webp/ux-indonesia-qC2n6RQU4Vw-unsplash.webp" alt="#">
             <figcaption>Foto:unsplash</figcaption>
         </figure>
+        
+        <section section id="sharebuttons">
+            <div class="fb-share-button" data-href="https://sperlini.github.io/CMS.html" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Del </a></div>
+            <!--https://developers.facebook.com/docs/plugins/share-button/-->
+            <a href="https://sperlini.github.io/CMS.html" class="twitter-share-button" data-size="large" data-lang="no" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <!--https://publish.twitter.com/?buttonLarge=on&buttonType=TweetButton&lang=no&widget=Button-->
+            <div><a id="pinterestshare" data-pin-do="buttonPin" data-pin-count="Select Pin count" data-pin-tall="true" data-pin-lang="en" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fsperlini.github.io%2FCMS.html&media=https%3A%2F%2Fsperlini.github.io%2Fbildebank%2Fwebstacks-WbOR54pzvLM-unsplash.webp&description=Next%20stop%3A%20Pinterest"></a></div>
+            <!--https://developers.pinterest.com/tools/widget-builder/?type=pinit&buttonType=oneImage&embedType=html&tall=true&count=Select%20Pin%20count-->
+        </section>
+        
         <section>
         
-            <h1>CMS</h1>
+            <h1 tabindex="0">CMS</h1>
+            <!--Ville gjøre siden bedre navigerbar via TAB knappen. Så fant tabindex="0" fra denne siden for å hjelpe med det https://www.csun.edu/universal-design-center/web-accessibility-criteria-tab-order  (Endring etter del 3 levering)-->
             <p>CMS eller Content management system, er en database som lar det organisere, publisere og redigere innhold uti fra behov, som gjør at det eksisterer en grei liste over ulike typer CMS. </p>
             
             
@@ -49,7 +86,7 @@
 
 
         <section id="article">
-            <h2>Headless og tradisjonelt CMS, hva skilles?</h2>
+            <h2 tabindex="0">Headless og tradisjonelt CMS, hva skilles?</h2>
             <p>Når man skal ha cms, så kommer man over to valg man kan ta når man ønsker en nettside. Det er å gå for tradisjonell cms eller headless cms. Går man for tradisjonell cms så er man bundet til en applikasjon som ordner innhold(body) og utseende (head) innenfor deres rammeverk og system (f.eks wordpress). Man er veldig begrenset hva for noe kode og plugins man kan bruke. Med tradisjonell så er man også veldig begrenset hvilket enheter som er kompatible med siden, man må nesten velge og vrake. Men tradisjonell er simpelt og funker bra hvis man har en simpel side som ikke trenger så mye. </p>
             
             <p>Med headless så har man større muligheter. Man kan designe innholdet(body) som man ønsker selv med API, og velger fritt hvor den skal publiseres. Det begrensete rammeverket til tradisjonelt cms er ikke der. Denne metoden er veldig bra hvis man skal skape noe mer avansert og ønsker mer spesifikke funksjoner og funksjonalitet. Her kan man ha responsiv design på alle enheter ved ønskelig. Samt alt det her så er det veldig behagelig for kodere å kunne velge selv hvor man lager innholdet uti fra deres egen smak. </p>
@@ -60,7 +97,7 @@
             <figcaption>Foto:unsplash</figcaption>
         </figure>
         <section>
-            <h2>Ulike typer CMS</h2>
+            <h2 tabindex="0">Ulike typer CMS</h2>
             
             <h3>Det finnes mange ulike typer CMS utifra behov og situasjon. Her er liste over de ulike CMS typene med beskrivelse på hvordan de funker og hva de er: </h3>
             <ul>
@@ -78,30 +115,30 @@
         
 
         <div id="table">
-            <div class="item1">Fordeler</div>
+            <div class="item1" tabindex="0">Fordeler</div>
             
-            <div class="item2">Ulemper</div>
+            <div class="item2" tabindex="0">Ulemper</div>
             
-            <div class="item3">Likheter/
+            <div class="item3" tabindex="0">Likheter/
                                 Ulikheter</div>
 
-            <div class="item4">Web Content Management System (WCMS)</div>
-            <div class="item6"><h3> -Enkelt å bruke</h3> <h3>-Gjør det den skal godt</h3> <h3> -Gratis eller liten pris abonnement</h3><h3> -Alt gjørs mer automatisk, effektivt å bruke</h3></div>
-            <div class="item7"><h3> -Begrensinger</h3><h3>-Fare for sikkerhetshul</h3><h3>-Server kan bli treig ved utdatert firmware</h3></div>
+            <div class="item4" tabindex="0">Web Content Management System (WCMS)</div>
+            <div class="item6" tabindex="0"><h3> -Enkelt å bruke</h3> <h3>-Gjør det den skal godt</h3> <h3> -Gratis eller liten pris abonnement</h3><h3> -Alt gjørs mer automatisk, effektivt å bruke</h3></div>
+            <div class="item7" tabindex="0"><h3> -Begrensinger</h3><h3>-Fare for sikkerhetshul</h3><h3>-Server kan bli treig ved utdatert firmware</h3></div>
             <!-- Kilde: https://www.techtarget.com/searchcontentmanagement/definition/web-content-management-WCM-->
-            <div class="item8"><h3>Likheter</h3><h3>-Mulig sikkerhetshull ved ikke regelmessig oppdatering</h3><h3>Ulikheter</h3><h3>-Ikke veldig responsiv på flere enn en platform</h3></div>
-            <div class="item9">Document Management System (DMS) </div>
-            <div class="item10"><h3>-Naturvennlig, slipper arkivering av ekte papir ved å akrivere digitalt</h3><h3>-Flere lag med sikkerhet</h3><h3>-Innhold kan lett nås med telefon</h3></div>
+            <div class="item8" tabindex="0"><h3>Likheter</h3><h3>-Mulig sikkerhetshull ved ikke regelmessig oppdatering</h3><h3>Ulikheter</h3><h3>-Ikke veldig responsiv på flere enn en platform</h3></div>
+            <div class="item9" tabindex="0">Document Management System (DMS) </div>
+            <div class="item10" tabindex="0"><h3>-Naturvennlig, slipper arkivering av ekte papir ved å akrivere digitalt</h3><h3>-Flere lag med sikkerhet</h3><h3>-Innhold kan lett nås med telefon</h3></div>
             <!--Kilder: https://www.openxcell.com/blog/types-of-content-management-systems/-->
-            <div class="item11"><h3>-Dyrt å sette opp</h3><h3>-Trenger regelmessig oppdateringer</h3></div>
+            <div class="item11" tabindex="0"><h3>-Dyrt å sette opp</h3><h3>-Trenger regelmessig oppdateringer</h3></div>
             <!--Kilder :https://yourtechavatar.com/document-management-system-pros-and-cons/-->
-            <div class="item12"><h3>Likheter</h3><h3>-System for å dele digitalt innhold</h3><h3>Ulikheter</h3><h3>-Begrenset til å dele bare dokumenter og nettsider</h3></div>
-            <div class="item13">Digitale Asset Mangement System (DAM) </div>
-            <div class="item14"><h3>-Biblotek lett tilgjengelig for flere brukere</h3><h3>Bedrifters retningslinger blir iveretatt</h3></div>
-            <div class="item15"><h3>-Dyrt å vedlikeholde</h3><h3>-Problemer ved feil metadata bruk</h3></div>
+            <div class="item12" tabindex="0"><h3>Likheter</h3><h3>-System for å dele digitalt innhold</h3><h3>Ulikheter</h3><h3>-Begrenset til å dele bare dokumenter og nettsider</h3></div>
+            <div class="item13" tabindex="0">Digitale Asset Mangement System (DAM) </div>
+            <div class="item14" tabindex="0"><h3>-Biblotek lett tilgjengelig for flere brukere</h3><h3>Bedrifters retningslinger blir iveretatt</h3></div>
+            <div class="item15" tabindex="0"><h3>-Dyrt å vedlikeholde</h3><h3>-Problemer ved feil metadata bruk</h3></div>
             <!--Kilde: https://yapoli.com/blog/en/what-are-the-challenges-of-using-digital-asset-management-dam-platforms/-->
             <!-- Kilde: https://www.quora.com/What-are-the-pros-and-cons-of-digital-asset-management-->
-            <div class="item16"><h3>Likheter</h3><h3>-System for å dele digitale filer</h3><h3>Cloud basert</h3><h3>Ulikheter</h3><h3>-Lett å gjenbruke digitale ressurser lagret i skyen</h3></div>
+            <div class="item16" tabindex="0"><h3>Likheter</h3><h3>-System for å dele digitale filer</h3><h3>Cloud basert</h3><h3>Ulikheter</h3><h3>-Lett å gjenbruke digitale ressurser lagret i skyen</h3></div>
 
         </div>
             
