@@ -285,6 +285,11 @@ section li{
     margin-bottom: 10px;
 }
 
+section img{
+    display: flex;
+    
+}
+
 #infoarticle{
 display: grid;
 align-items: center;
@@ -365,7 +370,7 @@ a{
 main article{
     
     flex-basis:250px;
-    /*flex-basis:250px; fikk jeg ide å bruke etter gjenomgang med lærer */ 
+    /*flex-basis:250px; fikk jeg ide å bruke etter gjennomgang med lærer */ 
     flex-grow: 1;
     padding: 1rem;
     flex-wrap: wrap;
@@ -508,9 +513,17 @@ dd{
 
 #header-center{
     text-align: center;
+    
+
 }
 
-
+#analyse-bilde{
+    float: left;
+    margin: auto;
+    display: block;
+    
+    
+}
 
 #map {
     height: 400px;
