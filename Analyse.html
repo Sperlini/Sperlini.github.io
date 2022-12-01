@@ -24,7 +24,7 @@
         <meta property="og:title" content="Analyse">
         <meta property="og:url" content="https://sperlini.github.io/Analyse.html">
         <meta property="og:image" content="https://sperlini.github.io/bildebank/webp/webstacks-WbOR54pzvLM-unsplash.webp">
-        <meta property="og:description" content="Analyse av nettsted og endringer gjort utifra resultat av analyse">
+        <meta property="og:description" content="Analyse av nettsted og tilgjengelighetserklæring">
         <!--og metatags er overnfor for facebook, pinterest etc delingsknappene-->
         <meta name="twitter:title" content="Analyse">
         <meta name="twitter:card" content="summary_large_image">
@@ -34,9 +34,27 @@
         <!--twitter metatags ovenfor for twitter delingsknapp-->
     </head>
 <body>
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : 'bdhp0Oi1',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v15.0'
+          });
+        };
+        //https://developers.facebook.com/docs/javascript/quickstart/ for å ordne Facebook SDK for javascript. 
+      </script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0" nonce="bdhp0Oi1"></script>
+    <!--Script for få facebookdeling knapp til å funke-->
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <!--Script for å deling/lagre knapp for pinterest -->
     
     <div id="grid-container"></div>
     <nav>
+        <a id="main-content" href="#maincontent">Gå til hovedinnhold</a>
         <h4><a href="index.html"><img src="bildebank/webp/webstacks-WbOR54pzvLM-unsplash.webp"  alt="logo hjemmeside"></a></h4>
         <h2>Deleksamen Webutvikling</h2>
         <ul>
@@ -47,112 +65,120 @@
             <li><a href="Kontakt-oss.html">Kontakt oss</a></li>
         </ul>
     </nav>
-<main>
+<main id="maincontent">
+    <section id="sharebuttons">
+        <div class="fb-share-button" data-href="https://sperlini.github.io/Analyse.html" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsperlini.github.io%2FAnalyse.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Del</a></div>
+        <!--https://developers.facebook.com/docs/plugins/share-button/-->
+        <a href="https://sperlini.github.io/UUvsSEO.html" class="twitter-share-button" data-size="large" data-lang="no" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <!--https://publish.twitter.com/?buttonLarge=on&buttonType=TweetButton&lang=no&widget=Button-->
+        <div><a data-pin-do="buttonPin" data-pin-count="Select Pin count--" data-pin-tall="true" data-pin-lang="en" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fsperlini.github.io%2FAnalyse.html&media=https%3A%2F%2Fsperlini.github.io%2Fbildebank%2Fwebp%2Fwebstacks-WbOR54pzvLM-unsplash.webp&description=Next%20stop%3A%20Pinterest"></a></div>
+        <!--https://developers.pinterest.com/tools/widget-builder/?type=pinit&buttonType=oneImage&embedType=html&tall=true&count=Select%20Pin%20count-->
+    </section>
         <section>
         <h1 id="header-center"> Analyse</h1>
-        <p> Vi har en analyse av nettsted som tar for seg SEO ,UU og heuritisk evaluering av nettsiden. Samt inkluderes en tilgjengligserklæring som tar for seg retningslinjer siden følger eller ikke.</p>
+        <p tabindex="0"> Vi har en analyse av nettsted som tar for seg SEO ,UU og heuritisk evaluering av nettsiden. Samt inkluderes en tilgjengligserklæring som tar for seg retningslinjer siden følger eller ikke.</p>
         
-        <p>Analysen tar for seg alle sidene på nettstedet,blant annet innholdsidene Hjem,CMS,Analyse,UU vs SEO og Kontakt oss. Analyseverktøy brukt er <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk" aria-label="link for å komme til google lighthouse google utvidelse brukt">Google Lighthouse</a> og <a href="https://wave.webaim.org/" aria-label="link for å komme til webaim wave validator nettside">Webaim Wave</a></p>
+        <p tabindex="0">Analysen tar for seg alle sidene på nettstedet,blant annet innholdsidene Hjem,CMS,Analyse,UU vs SEO og Kontakt oss. Analyseverktøy brukt er <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk" aria-label="link for å komme til google lighthouse google utvidelse brukt">Google Lighthouse</a> og <a href="https://wave.webaim.org/" aria-label="link for å komme til webaim wave validator nettside">Webaim Wave</a></p>
     </section>
    
         <section>
-            <h2>Resultater fra for innholdside 'CMS' på mobil(Lighthouse):</h2>
+            <h2 tabindex="0">Resultater fra for innholdside 'CMS' på mobil(Lighthouse):</h2>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/CMS-mobil-score-total-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/CMS-mobil-score-total-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Av alle katogoriene så skårer  Innholdensiden ganske greit på alt utenom Best practices. </p>
+            <p tabindex="0"> Av alle katogoriene så skårer  Innholdensiden ganske greit på alt utenom Best practices. </p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/CMS-performance-stats.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/CMS-performance-stats.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Her ser man stats på performance, kjører ganske greit. Har grei laste tid, ikke noe særlig layout shift etc. </p>
+            <p tabindex="0"> Her ser man stats på performance, kjører ganske greit. Har grei laste tid, ikke noe særlig layout shift etc. </p>
         </section>
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/muligheter-cms-mobil-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/muligheter-cms-mobil-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Kode som blir anbefalt å bli lagt inline istedenfor under head tag for å få veldig liten forbedret lastetid </p>
+            <p tabindex="0"> Kode som blir anbefalt å bli lagt inline istedenfor under head tag for å få veldig liten forbedret lastetid </p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/cms-mobil-properly-size-images-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/cms-mobil-properly-size-images-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p>Velg riktig størrelse på bildene for å forbedre lastetiden</p>
+            <p tabindex="0">Velg riktig størrelse på bildene for å forbedre lastetiden</p>
         </section>
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/cms-mobil-serve-static-assets-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/cms-mobil-serve-static-assets-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p>Det hadde vært greit å ha lengre cache lagre tid, så siden lastes inn raskere hvis mottaker er ofte på siden. Siden laster inn ganske greit, så minimalt med tid å hente inn her</p>
+            <p tabindex="0">Det hadde vært greit å ha lengre cache lagre tid, så siden lastes inn raskere hvis mottaker er ofte på siden. Siden laster inn ganske greit, så minimalt med tid å hente inn her</p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/cms-accessibility-mobil-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/cms-accessibility-mobil-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p>Accessibility er det ikke mye å si på her, veldig bra resultat greit uten særlig med problemer</p>
+            <p tabindex="0">Accessibility er det ikke mye å si på her, veldig bra resultat greit uten særlig med problemer</p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/cms-mobile-best-practices-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/cms-mobile-best-practices-.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Facebook likeknappen har kode i javascript som er deprecated, men funker for øyeblikket som den skal. Samt er det problemer i chrome devtools i følgende javascript fra twitter, pinterest og facebook javascript. Ikke noe vi får gjort noe med.</p>
+            <p tabindex="0"> Facebook likeknappen har kode i javascript som er deprecated, men funker for øyeblikket som den skal. Samt er det problemer i chrome devtools i følgende javascript fra twitter, pinterest og facebook javascript. Ikke noe vi får gjort noe med.</p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/cms-mobile-seo.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/cms-mobile-seo.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Alt er nesten bra i SEO, mangler bare meta descritpion tag for nettstedet. Greit å ha så crawlers og eventuelt motakkere av siden finner siden lettere. </p>
+            <p tabindex="0"> Alt er nesten bra i SEO, mangler bare meta descritpion tag for nettstedet. Greit å ha så crawlers og eventuelt motakkere av siden finner siden lettere. </p>
         </section>
         
         <section>
         <h2 class="headerCenter">Resultater fra for innholdside 'CMS' på desktop(Lighthouse):</h2>
         </section>
         <p class="infoAnalyse">*Resultater lik mobil inkluderes ikke*</p>
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/CMS-desktop-score-total.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/CMS-desktop-score-total.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Resultat på desktop er veldig lik den på mobil, bare litt større problemer i performance.</p>
+            <p tabindex="0"> Resultat på desktop er veldig lik den på mobil, bare litt større problemer i performance.</p>
         </section>
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/CMS-desktop-performance.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/CMS-desktop-performance.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Det er litt problemer med cumulative layout shift </p>
+            <p tabindex="0"> Det er litt problemer med cumulative layout shift </p>
         </section>
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/cms-desktop-image-explicit-width-height.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/cms-desktop-image-explicit-width-height.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Ved å ha litt lik bredde og høyde på bildene, så har layeouten en bedre flyt uten bilder med forskjellige bredder og høyder  </p>
+            <p tabindex="0"> Ved å ha litt lik bredde og høyde på bildene, så har layeouten en bedre flyt uten bilder med forskjellige bredder og høyder  </p>
         </section>
         
         
         <section>
         <h2 class="headerCenter">Resultater fra for innholdside 'UUvsSEO' på telefon(Lighthouse):</h2>
         </section>
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-score-total.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-score-total.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
             <p> UU vs SEO har veldig bra resultat på mobil, bare litt som ikke er bra i best practices </p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-performance.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-performance.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
             <p> Mye grønt, det liker vi å se! Er ikke mye som burde endres her. </p>
         </section>
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-muligheter.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-muligheter.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Hvis man ønsker så kan man legge disse kodene inline, hvis man vil ha en mulig bedring på 0,73 sekunder lastetid.  </p>
+            <p tabindex="0"> Hvis man ønsker så kan man legge disse kodene inline, hvis man vil ha en mulig bedring på 0,73 sekunder lastetid.  </p>
         </section>
 
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-diagnose.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-diagnose.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Her hadde det gjort seg om bildene hadde en explicit for å bedre cumulative layout shift  </p>
+            <p tabindex="0"> Her hadde det gjort seg om bildene hadde en explicit for å bedre cumulative layout shift  </p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-accessibility.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-accessibility.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Accessibility er bra, ikke mye å si her.</p>
+            <p tabindex="0"> Accessibility er bra, ikke mye å si her.</p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-bestpractices.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-bestpractices.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Er kodebiter i API til facebook deling knappen som er utgått eller snart blit utgått. Ikke mye vi får gjort på det her. Oppgaven var å ha delingknappen til facebook, det er fikset.  </p>
+            <p tabindex="0"> Er kodebiter i API til facebook deling knappen som er utgått eller snart blit utgått. Ikke mye vi får gjort på det her. Oppgaven var å ha delingknappen til facebook, det er fikset.  </p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-SEO.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-SEO.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Meta description tag mangler her igjen. Dette kommer til å være gjennomgående på alle innholdsider. Det blir fikset fortløpende.  </p>
+            <p tabindex="0"> Meta description tag mangler her igjen. Dette kommer til å være gjennomgående på alle innholdsider. Det blir fikset fortløpende.  </p>
         </section>
 
         <section>
@@ -160,24 +186,24 @@
         </section>
         <p class="infoAnalyse">*Resultater lik mobil inkluderes ikke*</p>
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-desktop-score-total.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-desktop-score-total.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> UU vs SEO har veldig bra resultat, bare best practices som er dårligere på dekstop enn på mobil. </p>
+            <p tabindex="0"> UU vs SEO har veldig bra resultat, bare best practices som er dårligere på dekstop enn på mobil. </p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-desktop-bestpractices.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-desktop-bestpractices.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Riktig aspect ratio på bildet hadde vært på sinn plass å fikse her.   </p>
+            <p tabindex="0"> Riktig aspect ratio på bildet hadde vært på sinn plass å fikse her.   </p>
         </section>
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-desktop-bestpractices2.png" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-desktop-bestpractices2.png" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Her er problemer igjen med delingsknappene til facebook,pinterest og twitter. Ingenting vi kan gjøre når det er feil på deres side. </p>
+            <p tabindex="0"> Her er problemer igjen med delingsknappene til facebook,pinterest og twitter. Ingenting vi kan gjøre når det er feil på deres side. </p>
         </section>
 
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-diagnose.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/UUvsSEO-mobile-diagnose.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Sett en explicity width og height så det forbedrer cumulative layout shift </p>
+            <p tabindex="0"> Sett en explicity width og height så det forbedrer cumulative layout shift </p>
         </section>
 
         
@@ -186,42 +212,42 @@
             <h2>Resultater fra for innholdside 'Kontakt oss' på mobil(Lighthouse):</h2>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-score-total.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-score-total.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Dette er helhets resultatet til innholdsiden. Alt er greit utenom småting i performance og best practices. </p>
+            <p tabindex="0"> Dette er helhets resultatet til innholdsiden. Alt er greit utenom småting i performance og best practices. </p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-performance.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-performance.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Her er det mye av de samme problemene som på de andre innholdssidene.</p>
+            <p tabindex="0"> Her er det mye av de samme problemene som på de andre innholdssidene.</p>
         </section>
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-muligheter.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-muligheter.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Her er det mye av de samme problemene som på de andre innholdssidene. </p>
+            <p tabindex="0"> Her er det mye av de samme problemene som på de andre innholdssidene. </p>
         </section>
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-diagnose.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-diagnose.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> En viktig ting som skal forbedres her er at tekst er snylig med webfontene driver å blir lastet inn. Skal fikes fortløpende </p>
+            <p tabindex="0"> En viktig ting som skal forbedres her er at tekst er snylig med webfontene driver å blir lastet inn. Skal fikes fortløpende </p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-accessibility.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-accessibility.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Heading tag er i litt feil rekkefølge, h3 hopper over h2 eller feks h4 etter h3. Skal fikese fortløpende  </p>
+            <p tabindex="0"> Heading tag er i litt feil rekkefølge, h3 hopper over h2 eller feks h4 etter h3. Skal fikese fortløpende  </p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-seo.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-mobile-seo.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Som på andre innholdsider så mangles det meta description tag. Også feil i størrelse på knappen til googlemaps kartet som er lagt til på siden. Dette er design laget av google selv.</p>
+            <p tabindex="0"> Som på andre innholdsider så mangles det meta description tag. Også feil i størrelse på knappen til googlemaps kartet som er lagt til på siden. Dette er design laget av google selv.</p>
         </section>
         
         <h2 class="headerCenter">Resultater fra for innholdside 'Kontakt oss' på desktop(Lighthouse):</h2>
         <p class="infoAnalyse">*Resultater lik mobil inkluderes ikke*</p>
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-desktop-full-score.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/kontakt-oss-desktop-full-score.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Dette er helhets restultatet for innholdsiden. Mye som er veldig bra utenom småting i best practices som går igjennom på alle innholdsidene. Så den delene inkluderes ikke nå igjen nedunder. </p>
+            <p tabindex="0"> Dette er helhets restultatet for innholdsiden. Mye som er veldig bra utenom småting i best practices som går igjennom på alle innholdsidene. Så den delene inkluderes ikke nå igjen nedunder. </p>
         </section>
         
 
@@ -231,39 +257,39 @@
         
         
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/Home-mobil-full-score.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/Home-mobil-full-score.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Dette er resultatet for hjem på mobil enhet, resultatet er ikke like bra som på desktop. Dette skal vi se mer på.</p>
+            <p tabindex="0"> Dette er resultatet for hjem på mobil enhet, resultatet er ikke like bra som på desktop. Dette skal vi se mer på.</p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/home-mobil-performance.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/home-mobil-performance.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Her er det mye av de samme feilene som andre innholdsider. </p>
+            <p tabindex="0"> Her er det mye av de samme feilene som andre innholdsider. </p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/Home-mobil-muligheter.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/Home-mobil-muligheter.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Noe som burde fikses her er jpeg som burde byttes til webp filformat for raskere innlastningstid.</p>
+            <p tabindex="0"> Noe som burde fikses her er jpeg som burde byttes til webp filformat for raskere innlastningstid.</p>
         </section>
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/Home-mobil-diagnose.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/Home-mobil-diagnose.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Her er det for det meste cache som kunne blitt gjort med for raskere innlastningstid ved flerbesøkende på siden.</p>
+            <p tabindex="0"> Her er det for det meste cache som kunne blitt gjort med for raskere innlastningstid ved flerbesøkende på siden.</p>
         </section>
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/home-mobil-accessibility.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/home-mobil-accessibility.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Her kan header rekkefølgen bli fikset opp i til en mer logisk rekkefølge.</p>
+            <p tabindex="0"> Her kan header rekkefølgen bli fikset opp i til en mer logisk rekkefølge.</p>
         </section>
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/Home-mobil-bestpractice.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/Home-mobil-bestpractice.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Korrekt aspect ratio hadde vært greit å fikset opp i disse bildene.</p>
+            <p tabindex="0"> Korrekt aspect ratio hadde vært greit å fikset opp i disse bildene.</p>
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/home-mobil-SEO.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/home-mobil-SEO.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p>Meta description mangler, ellers ganske greit her.</p>
+            <p tabindex="0">Meta description mangler, ellers ganske greit her.</p>
         </section>
         
         <section>
@@ -271,83 +297,83 @@
         </section>
         <p class="infoAnalyse">*Resultater lik mobil inkluderes ikke*</p>
         
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/home-desktop-full-score.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/home-desktop-full-score.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> Resultat for Hjem innholdsiden for desktop, ganske lik mobil så ikke mye å si på det.</p>
+            <p tabindex="0"> Resultat for Hjem innholdsiden for desktop, ganske lik mobil så ikke mye å si på det.</p>
         </section>
 
         <section>
             <h2 class="headerCenter">Resultater fra for innholdside 'Hjem' (Wave):</h2> 
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/wave-hjem.png" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/wave-hjem.png" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> 1 lavkontrast feil i headerbildet på innholdsiden som treger å bli fikset,</p>
-            <p>2 bilder som har samme alt tekst,</p> 
-            <p>2 ganger hvor heading tag blir hoppet over i rekkefølge eller rot,</p> 
-            <p>6 tilfeller hvor flere linker på samme innholdside leder til samme sted.</p>
+            <p tabindex="0"> 1 lavkontrast feil i headerbildet på innholdsiden som treger å bli fikset,</p>
+            <p tabindex="0">2 bilder som har samme alt tekst,</p> 
+            <p tabindex="0">2 ganger hvor heading tag blir hoppet over i rekkefølge eller rot,</p> 
+            <p tabindex="0">6 tilfeller hvor flere linker på samme innholdside leder til samme sted.</p>
 
         <section>
             <h2 class="headerCenter">Resultater fra for innholdside 'CMS' (Wave):</h2> 
         </section>
 
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/wave-cms.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/wave-cms.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p>1 tilfelle hvor bilder har samme alt tekst,</p> 
-            <p>3 hvor det kanskje kunne blitt brukt en heading tag,</p> 
-            <p>3 tilfeller hvor flere linker på samme innholdside leder til samme sted.</p>
+            <p tabindex="0">1 tilfelle hvor bilder har samme alt tekst,</p> 
+            <p tabindex="0">3 hvor det kanskje kunne blitt brukt en heading tag,</p> 
+            <p tabindex="0">3 tilfeller hvor flere linker på samme innholdside leder til samme sted.</p>
         </section>
 
         <section>
             <h2 class="headerCenter">Resultater fra for innholdside 'UUvsSEO' (Wave):</h2> 
         </section>
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/uuvsseo_wave.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/uuvsseo_wave.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
             
-            <p>2 tilfeller hvor bilder har samme alt tekst,</p> 
-            <p>3 ganger hvor heading taggen kanskje kunne blitt brukt,</p> 
-            <p>3 tilfeller hvor flere linker på samme innholdside leder til samme sted.</p>
+            <p tabindex="0">2 tilfeller hvor bilder har samme alt tekst,</p> 
+            <p tabindex="0">3 ganger hvor heading taggen kanskje kunne blitt brukt,</p> 
+            <p tabindex="0">3 tilfeller hvor flere linker på samme innholdside leder til samme sted.</p>
         </section>
 
         <section>
             <h2 class="headerCenter">Resultater fra for innholdside 'Kontakt Oss' (Wave):</h2> 
         </section>
-        <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/wave-kontakt-oss.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
+        <figure><img tabindex="0" class="object-fit-cover" src="./bildebank/Analysebilder/wave-kontakt-oss.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> 3 manglene form label</p>
-            <p>1 tilfelle hvor heading tag blir hoppet over i rekkefølge</p> 
-            <p>3 tilfeller hvor flere linker på samme innholdside leder til samme sted,</p>
-            <p>1 små tekst bruk</p>
-            <p>2 tilfeller med samme title</p>
-            <P>1 mulig header kunne blitt brukt</P>
+            <p tabindex="0"> 3 manglene form label</p>
+            <p tabindex="0">1 tilfelle hvor heading tag blir hoppet over i rekkefølge</p> 
+            <p tabindex="0">3 tilfeller hvor flere linker på samme innholdside leder til samme sted,</p>
+            <p tabindex="0">1 små tekst bruk</p>
+            <p tabindex="0">2 tilfeller med samme title</p>
+            <P tabindex="0">1 mulig header kunne blitt brukt</P>
         </section>
 
         <section>
-            <h2 class="headerCenter">Heuristisk Evaluering:</h2> 
+            <h2 tabindex="0" class="headerCenter">Heuristisk Evaluering:</h2> 
         </section>
-            <h3>Nå skal det tas en heuristisk evalueriing, så ingen digitale analysevertøy nå. Nå skal sides ses på og vurderes etter 10 
+            <h3 tabindex="0">Nå skal det tas en heuristisk evalueriing, så ingen digitale analysevertøy nå. Nå skal sides ses på og vurderes etter 10 
                 generelle prinsipper for bra grafisk design</h3>
             
             <section>
-                <p>1. Synlighet og system status: Er det snylig og innlystende for brukeren hva som skjer utifra deres handlinger? Trykker de på den knappen er det veldig synlig og innlysende hva resultatet av brukerens handlinger? Det kravet stiller siden. Trykker du på feks 'Kontakt oss' kommer du til en side med stor title som sier kontakt oss. Trykker du på hjem så kommer du tilbake til forsiden.  </p>
+                <p tabindex="0">1. Synlighet og system status: Er det snylig og innlystende for brukeren hva som skjer utifra deres handlinger? Trykker de på den knappen er det veldig synlig og innlysende hva resultatet av brukerens handlinger? Det kravet stiller siden. Trykker du på feks 'Kontakt oss' kommer du til en side med stor title som sier kontakt oss. Trykker du på hjem så kommer du tilbake til forsiden.  </p>
                 
-                <p>2. Design matcher den virkelige verden: Om designet er laget slik at brukeren forstår, ikke noen ord eller symboler som er vanskelig å forstå. Brukeren skal ha stor forståelse av hva ord og hva knappen betyr. Det er brukt bra med ord og knapper som gjør det lett for motakkeren å skjønne her. </p>
+                <p tabindex="0">2. Design matcher den virkelige verden: Om designet er laget slik at brukeren forstår, ikke noen ord eller symboler som er vanskelig å forstå. Brukeren skal ha stor forståelse av hva ord og hva knappen betyr. Det er brukt bra med ord og knapper som gjør det lett for motakkeren å skjønne her. </p>
                 
-                <p>3. Konsistens og standarder: Siden har grei konsistens. Den holder seg tro til design, så det skal være lett å skjønne seg på siden hvia man har lært seg siden en gang.  </p>
+                <p tabindex="0">3. Konsistens og standarder: Siden har grei konsistens. Den holder seg tro til design, så det skal være lett å skjønne seg på siden hvia man har lært seg siden en gang.  </p>
                 
-                <p>4. Bruker frihet og kontroll: Det er ingen handlinger som er noe problemer å trekke seg utfra. Største grunn er vel at siden er veldig simpel og skal ikke plassere motakkeren i en vanskelig eller misfortående posisjon. Friheten er her.  </p>
+                <p tabindex="0">4. Bruker frihet og kontroll: Det er ingen handlinger som er noe problemer å trekke seg utfra. Største grunn er vel at siden er veldig simpel og skal ikke plassere motakkeren i en vanskelig eller misfortående posisjon. Friheten er her.  </p>
                 
-                <p>5. Error motarbeidelse: Er ikke noen særlig system som sender error melding hvis man har gjort noe feil på siden. Men alt funker som det skal så error melding har ingen grunn til å komme opp.</p>
+                <p tabindex="0">5. Error motarbeidelse: Er ikke noen særlig system som sender error melding hvis man har gjort noe feil på siden. Men alt funker som det skal så error melding har ingen grunn til å komme opp.</p>
                 
-                <p>6. Gjenskjenne istenfor å huske: Lett å gjenkjenne knapper og funksjoner, ingen behov for å måtte huske design av siden for å kunne bruke den bra.</p>
+                <p tabindex="0">6. Gjenskjenne istenfor å huske: Lett å gjenkjenne knapper og funksjoner, ingen behov for å måtte huske design av siden for å kunne bruke den bra.</p>
                 
-                <p>7. Fleksibilitet og effektiv bruk: Om det er lagt inn funksjoner som gjør det effektivt for erfarne og både mindre erfarne brukerer. Vil si det ikke er noen særlig sånne funksjoner på denne siden. Vi har en simpel side som gjør det den skal ganske simplet. Det er ikke noen særlig behov for funksjoner for å gjør prossessen på siden raskere.  </p>
+                <p tabindex="0">7. Fleksibilitet og effektiv bruk: Om det er lagt inn funksjoner som gjør det effektivt for erfarne og både mindre erfarne brukerer. Vil si det ikke er noen særlig sånne funksjoner på denne siden. Vi har en simpel side som gjør det den skal ganske simplet. Det er ikke noen særlig behov for funksjoner for å gjør prossessen på siden raskere.  </p>
                 
-                <p>8. Autentisk og minimalistisk design: Siden har ikke noe særlige ting som er innrelevant til innholdet som er tilstede. Siden er ikke ubehaglig å se på, simpel og fin side </p>
+                <p tabindex="0">8. Autentisk og minimalistisk design: Siden har ikke noe særlige ting som er innrelevant til innholdet som er tilstede. Siden er ikke ubehaglig å se på, simpel og fin side </p>
                 
-                <p>9. Hjelpe brukere forstå, gjøre diagnose og komme seg fra errors: Er ikke mye rom på siden for error. Men skulle vært lagt til en error melding hvis kanskje det er noe feil i kode som. Men vi har lagt til en kontakt skjema hvis det skulle være en feil de vil raportere som vi kan fikse</p>
+                <p tabindex="0">9. Hjelpe brukere forstå, gjøre diagnose og komme seg fra errors: Er ikke mye rom på siden for error. Men skulle vært lagt til en error melding hvis kanskje det er noe feil i kode som. Men vi har lagt til en kontakt skjema hvis det skulle være en feil de vil raportere som vi kan fikse</p>
                 
-                <p>10. Hjelp og dokumentasjon: Er tydlig informasjon som hjelper brukeren gjøre det de vil på siden. </p>
+                <p tabindex="0">10. Hjelp og dokumentasjon: Er tydlig informasjon som hjelper brukeren gjøre det de vil på siden. </p>
             </section>       
 
 
@@ -360,14 +386,14 @@
         
         
         <div id="table">
-            <div class="item1">Resultater analyse mobil</div>
+            <div class="item1" tabindex="0">Resultater analyse mobil</div>
             
-            <div class="item2">Resultater analyse dekstop(+ Wave)</div>
+            <div class="item2" tabindex="0">Resultater analyse dekstop(+ Wave)</div>
             
-            <div class="item3">Tiltak som er gjort dekstop/mobil</div>
+            <div class="item3" tabindex="0">Tiltak som er gjort dekstop/mobil</div>
 
             <div class="item4"></div>
-            <div class="item6">
+            <div class="item6" tabindex="0">
                 <p>CMS: 4 block render-blocking-resources</p>
                 <p>1 ubrukt javascript</p>
                 <p>3 bilder som trenger forbedret størrelse </p>
@@ -376,7 +402,7 @@
                 <p>Problemer med cookies fra deleknapper</p>
 
             </div>
-            <div class="item7">
+            <div class="item7" tabindex="0">
                 <p>CMS:</p>
                 <p>3 bilder trenger explicit width og height</p>
                 <p>UUvsSEO:</p>
@@ -386,26 +412,31 @@
 
                 
             </div>
-            <div class="item8">
-                <p>CMS: la til css slik at bilder fikk bedre størrelse og aspect ratio</p>
+            <div class="item8" tabindex="0" aria-label="scroll til siden for å se hele bildet">
+                <p>CMS:</p> 
+                <img src="./bildebank/Analysebilder/storrelse og aspect ratio fix.webp" alt="bilde av kodebit som endret aspect ratio og størrelse CMS">
+                <p>la til css slik at bilder fikk bedre størrelse og aspect ratio</p>
+                <img src="./bildebank/Analysebilder/meta tags cms fix.webp" alt="bilde av kodebit som endret aspect ratio og størrelse CMS">
                 <p>Meta tag description er lagt til samt meta keywords</p>
-                <p>Bilder er har css gode slik at den får en bestemt width og height</p>
-                <p>UUvsSEO: Brukt css for bilder for å fikse aspect ratio og den har bestemt height og width</p>
+                <p>UUvsSEO:</p>
+                <img src="./bildebank/Analysebilder/storrelse og aspect ratio fix.webp" alt="bilde av kodebit som endret aspect ratio og størrelse UUvsSEO">
+                    <p>Brukt css for bilder for å fikse aspect ratio og den har bestemt height og width</p>
+                    <img src="./bildebank/Analysebilder/meta tags cms fix.webp" alt="bilde av kodebit som endret aspect ratio og størrelse CMS">
                 <p>Meta tag for description og keywords er lagt til</p>
             </div>
             <div class="item9"></div>
-            <div class="item10">
+            <div class="item10" tabindex="0">
                 <p> UUvsSEO: 4 block render-blocking render-blocking-resources</p>
                 <p>Ubrukt javascript</p>
                 <p>4 explicit height og width på bilder</p>
                 <p>2 deprecated APIs</p>
                 <p>Manglende meta descritpion tag</p>
             </div>
-            <div class="item11">
+            <div class="item11" tabindex="0">
                 <p>Hjem: samme feil som mobil</p>
 
             </div>
-            <div class="item12">
+            <div class="item12" tabindex="0">
                 <p> Kontakt oss: Logo på siden byttet fra jpeg til manglet webp</p>
                 <p> La til meta tag description og meta tag keywords til siden</p>
                 <p> font-display: swap; ble lagt til slik at system font er der helt til nettside fonten har blitt lastet inn</p>
@@ -413,7 +444,7 @@
                 <p>Brukt css for å fikse aspect ratio og størrelse på bilde</p>
             </div>
             <div class="item13"></div>
-            <div class="item14">
+            <div class="item14" tabindex="0">
                 <p>Kontakt Oss:</p>
                 <p>Render render-blocking-resources</p>
                 <p>Ubrukt javascript</p>
@@ -431,13 +462,14 @@
                 <p>Manglende meta description</p>
 
             </div>
-            <div class="item15"><h3>Wave:</h3>
+            <div class="item15" tabindex="0">
+            <p>Wave</p>
             <p>Kontakt oss: 14 gule errors, 4 røde errors</p>
             <p>Hjem: 10 gule errors, 1 rød error</p>
             <p>CMS: 7 gule errors</p>
             <p>UU vs SEO: 8 gule errors</p>
             </div>
-            <div class="item16">
+            <div class="item16" tabindex="0">
                 <p>Wave:</p>
                 <p> Kontakt Oss: La riktig ordentlig label tag fornavn label, etternavn label og beskrivelse label </p>
                 <p>Hjem: Forbedret contrast på HJEM tekst for å møte AAA krav(#854700)</p>

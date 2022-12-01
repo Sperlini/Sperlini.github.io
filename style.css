@@ -89,6 +89,16 @@ nav img {
     animation-fill-mode: forwards;
 } */
 
+#main-content{
+    display: none;
+    position: absolute;
+    left: 5px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-right-radius: 8px;
+    /*https://webaim.org/techniques/skipnav/#creating Link brukt for å inspirere av hvordan den skal lages og brukte kodebiter herfra*/ 
+}
+
 nav ul {
     
     gap: 1rem ;
@@ -287,10 +297,10 @@ section li{
     margin-bottom: 10px;
 }
 
-section img{
+/*section img{
     display: flex;
     
-}
+} Endring fra del 2 til del 4 */
 
 .object-fit-cover {
     width: 100%;
@@ -574,6 +584,10 @@ font-size: 9px;
         font-size: 20px;
         
 }
+#main-content{
+    display: block;
+}
+
     
 
     #table{
