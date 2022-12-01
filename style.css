@@ -145,7 +145,7 @@ nav ul {
 #sharebuttons-right{
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
 }
 
 
@@ -583,7 +583,7 @@ font-size: 9px;
     section h1{
         font-size: 45px;
     }
-     
+    
 }
 
 
@@ -607,7 +607,9 @@ font-size: 9px;
     section h1{
         font-size: 60px;
     }
-
+    #sharebuttons{
+        justify-content: right;
+    }
 }
 
 
