@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Analyse og tilgjengligserklæring nettside Webutvikling eksamen">
+        <meta name="keywords" content="Analyse, tilgjengligserklæring">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -312,11 +314,41 @@
         </section>
         <figure><img class="object-fit-cover" src="./bildebank/Analysebilder/wave-kontakt-oss.webp" alt="resultat score fra google lighouse på innholdsiden"></figure>
         <section class="infoArticle">
-            <p> 1 lavkontrast feil i headerbildet på innholdsiden som treger å bli fikset,</p>
-            <p>2 bilder som har samme alt tekst,</p> 
-            <p>2 ganger hvor heading tag blir hoppet over i rekkefølge eller rot,</p> 
-            <p>6 tilfeller hvor flere linker på samme innholdside leder til samme sted.</p>
+            <p> 3 manglene form label</p>
+            <p>1 tilfelle hvor heading tag blir hoppet over i rekkefølge</p> 
+            <p>3 tilfeller hvor flere linker på samme innholdside leder til samme sted,</p>
+            <p>1 små tekst bruk</p>
+            <p>2 tilfeller med samme title</p>
+            <P>1 mulig header kunne blitt brukt</P>
         </section>
+
+        <section>
+            <h2 class="headerCenter">Heuristisk Evaluering:</h2> 
+        </section>
+            <h3>Nå skal det tas en heuristisk evalueriing, så ingen digitale analysevertøy nå. Nå skal sides ses på og vurderes etter 10 
+                generelle prinsipper for bra grafisk design</h3>
+            
+            <section>
+                <p>1. Synlighet og system status: Er det snylig og innlystende for brukeren hva som skjer utifra deres handlinger? Trykker de på den knappen er det veldig synlig og innlysende hva resultatet av brukerens handlinger? Det kravet stiller siden. Trykker du på feks 'Kontakt oss' kommer du til en side med stor title som sier kontakt oss. Trykker du på hjem så kommer du tilbake til forsiden.  </p>
+                
+                <p>2. Design matcher den virkelige verden: Om designet er laget slik at brukeren forstår, ikke noen ord eller symboler som er vanskelig å forstå. Brukeren skal ha stor forståelse av hva ord og hva knappen betyr. Det er brukt bra med ord og knapper som gjør det lett for motakkeren å skjønne her. </p>
+                
+                <p>3. Konsistens og standarder: Siden har grei konsistens. Den holder seg tro til design, så det skal være lett å skjønne seg på siden hvia man har lært seg siden en gang.  </p>
+                
+                <p>4. Bruker frihet og kontroll: Det er ingen handlinger som er noe problemer å trekke seg utfra. Største grunn er vel at siden er veldig simpel og skal ikke plassere motakkeren i en vanskelig eller misfortående posisjon. Friheten er her.  </p>
+                
+                <p>5. Error motarbeidelse: Er ikke noen særlig system som sender error melding hvis man har gjort noe feil på siden. Men alt funker som det skal så error melding har ingen grunn til å komme opp.</p>
+                
+                <p>6. Gjenskjenne istenfor å huske: Lett å gjenkjenne knapper og funksjoner, ingen behov for å måtte huske design av siden for å kunne bruke den bra.</p>
+                
+                <p>7. Fleksibilitet og effektiv bruk: Om det er lagt inn funksjoner som gjør det effektivt for erfarne og både mindre erfarne brukerer. Vil si det ikke er noen særlig sånne funksjoner på denne siden. Vi har en simpel side som gjør det den skal ganske simplet. Det er ikke noen særlig behov for funksjoner for å gjør prossessen på siden raskere.  </p>
+                
+                <p>8. Autentisk og minimalistisk design: Siden har ikke noe særlige ting som er innrelevant til innholdet som er tilstede. Siden er ikke ubehaglig å se på, simpel og fin side </p>
+                
+                <p>9. Hjelpe brukere forstå, gjøre diagnose og komme seg fra errors: Er ikke mye rom på siden for error. Men skulle vært lagt til en error melding hvis kanskje det er noe feil i kode som. Men vi har lagt til en kontakt skjema hvis det skulle være en feil de vil raportere som vi kan fikse</p>
+                
+                <p>10. Hjelp og dokumentasjon: Er tydlig informasjon som hjelper brukeren gjøre det de vil på siden. </p>
+            </section>       
 
 
         <a href="">Her er tilgjengligserklæringen til nettstedet</a>
@@ -335,17 +367,82 @@
             <div class="item3">Tiltak som er gjort dekstop/mobil</div>
 
             <div class="item4"></div>
-            <div class="item6"><h3>Innholdet på siden</h3></div>
-            <div class="item7"><h3>Farger og visuell synlighet</h3></div>
-            <div class="item8"><h3>SEO:</h3><h3>Siden har bra kvalitey, riktig bruk av nøkkelord, bruker ord og ordtakk som når mottaker</h3><h3>UU:</h3><h3>Rikig kontraster og farger så de med fargeblinnhet får fin opplevelse, grei fontstørrelse for de med synsvansker og <span lang="en">text to speech</span> for de som er helt blinde</h3></div>
+            <div class="item6">
+                <p>CMS: 4 block render-blocking-resources</p>
+                <p>1 ubrukt javascript</p>
+                <p>3 bilder som trenger forbedret størrelse </p>
+                <p>14 cache problemer</p>
+                <p>1 deprecated API</p>
+                <p>Problemer med cookies fra deleknapper</p>
+
+            </div>
+            <div class="item7">
+                <p>CMS:</p>
+                <p>3 bilder trenger explicit width og height</p>
+                <p>UUvsSEO:</p>
+                <p>1 bilde fiks aspect ratio</p>
+                <p>2 deprecated APIs</p>
+                <p>4 explicit width og height på bilder</p>
+
+                
+            </div>
+            <div class="item8">
+                <p>CMS: la til css slik at bilder fikk bedre størrelse og aspect ratio</p>
+                <p>Meta tag description er lagt til samt meta keywords</p>
+                <p>Bilder er har css gode slik at den får en bestemt width og height</p>
+                <p>UUvsSEO: Brukt css for bilder for å fikse aspect ratio og den har bestemt height og width</p>
+                <p>Meta tag for description og keywords er lagt til</p>
+            </div>
             <div class="item9"></div>
-            <div class="item10"><h3>Oppsettet</h3></div>
-            <div class="item11"><h3>Navigering</h3></div>
-            <div class="item12"><h3>SEO:</h3><h3>Crawlerne ser innholdet lett på siden, siden er reponsiv,raskt å loade siden og riktig bruk av HTTPS</h3><h3>UU:</h3><h3>Siden er satt opp slik at man kan navigere i alt innhold med bare tastature trykking</h3></div>
+            <div class="item10">
+                <p> UUvsSEO: 4 block render-blocking render-blocking-resources</p>
+                <p>Ubrukt javascript</p>
+                <p>4 explicit height og width på bilder</p>
+                <p>2 deprecated APIs</p>
+                <p>Manglende meta descritpion tag</p>
+            </div>
+            <div class="item11">
+                <p>Hjem: samme feil som mobil</p>
+
+            </div>
+            <div class="item12">
+                <p> Kontakt oss: Logo på siden byttet fra jpeg til manglet webp</p>
+                <p> La til meta tag description og meta tag keywords til siden</p>
+                <p> font-display: swap; ble lagt til slik at system font er der helt til nettside fonten har blitt lastet inn</p>
+                <p>Hjem: La til meta tag description og meta keywords tag</p>
+                <p>Brukt css for å fikse aspect ratio og størrelse på bilde</p>
+            </div>
             <div class="item13"></div>
-            <div class="item14"><h3>HTML</h3></div>
-            <div class="item15"><h3>Innhold</h3></div>
-            <div class="item16"><h3>SEO:</h3><h3>Bra bruk av titletags,metadata beskriver hva innholdet handler om, strukturert innhold, headers bruker tags med relevant nøkkelord og siden overdriver ikke bruk av nøkkeord i tekst</h3><h3>UU:</h3><h3>Innholdet er lett forståelig med enkle ord, bilder og overskrifter gir mening</h3></div>
+            <div class="item14">
+                <p>Kontakt Oss:</p>
+                <p>Render render-blocking-resources</p>
+                <p>Ubrukt javascript</p>
+                <p>Fjerne Ubrukt CSS</p>
+                <p>Tekst trengs å være synlig mens font lastes inn</p>
+                <p>1 explicit width and weight bilde</p>
+                <p>fiks i 1 heading rekkefølge</p>
+                <p>Meta description tag mangler</p>
+                <p>Hjem:</p>
+                <p>Ubrukt javascript</p>
+                <p>Bruke webp istedenfor jpeg 1 bilde</p>
+                <p>1 bilde hight and weight</p>
+                <p>1 tilfelle heading rekkefølge feil</p>
+                <p>Aspect ratio feil 3 bilder</p>
+                <p>Manglende meta description</p>
+
+            </div>
+            <div class="item15"><h3>Wave:</h3>
+            <p>Kontakt oss: 14 gule errors, 4 røde errors</p>
+            <p>Hjem: 10 gule errors, 1 rød error</p>
+            <p>CMS: 7 gule errors</p>
+            <p>UU vs SEO: 8 gule errors</p>
+            </div>
+            <div class="item16">
+                <p>Wave:</p>
+                <p> Kontakt Oss: La riktig ordentlig label tag fornavn label, etternavn label og beskrivelse label </p>
+                <p>Hjem: Forbedret contrast på HJEM tekst for å møte AAA krav(#854700)</p>
+                <p>byttet ut 1 bilde fra jpeg til webp for bedret lastetid</p>
+            </div>
         </div>
     
     
